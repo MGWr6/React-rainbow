@@ -13,9 +13,9 @@ function App() {
     'orange', 'red'
   ])
 
-  let colorMap = colors.map((color, i) => {
+  let colorMap = colors.map((color, index) => {
     return (
-      <ColorBlock color={color} />
+      <ColorBlock color={color} key={index} />
     )
   })
   
